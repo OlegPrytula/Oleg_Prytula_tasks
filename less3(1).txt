@@ -1,0 +1,10 @@
+Task 1
+a = abs(int(input()))
+mult = 1
+ 
+while a > 0:
+    digit = a % 10
+    mult *= digit
+    a = a // 10
+
+print(mult)

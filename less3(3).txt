@@ -1,0 +1,6 @@
+Task 3
+var_first = 5
+var_second = 10
+var_first, var_second = var_second, var_first
+print("Var first is ", var_first)
+print("Var second is ", var_second)
