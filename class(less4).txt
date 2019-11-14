@@ -1,0 +1,55 @@
+i = 0
+while i < 100:
+    if i % 2 == 0:
+        print (i)
+    i = i + 1
+###########################################
+i = 0
+while i < 100:
+    if i % 2 != 0:
+        print (i)
+    i = i + 1
+############################################
+list1=[23,21,13,10]
+for a in range (0, len(list1)):
+    print(float(a))
+############################################
+n=int(input("N = "))
+a= 0
+f=[1, 1]
+for z in range (1, n):
+    f.append(f[z]+ f[z-1])
+print(f)
+#############################################
+list1=['fast', 'grate', 'slowly', 'strong']
+for i in range (0, len(list1)):
+    print(list1[i] + '#')
+#############################################
+n=int(input("Imput number: "))
+d=2
+if n % d==0:
+    d+=1
+
+    print('this number is complycated')
+else:
+    print('this number is simple')
+##############################################   
+from random import random
+real=round(random()*1000,6)
+print(real)
+strReal=str(real)
+maxDigit=-1
+for i in range(len(strReal)):
+    if strReal[i]== '.':
+        continue
+    elif maxDigit<int(strReal[i]):
+        maxDigit=int(strReal[i])
+
+print(maxDigit)
+##############################################
+str=list(input("¬вед≥ть слово "))
+reversed_string=str[::-1]
+if str==reversed_string:
+    print('palindorm')
+else:
+    print('not palindorm') 
