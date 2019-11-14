@@ -1,0 +1,64 @@
+def arif_mean ():
+    #counts the arithmetic mean of an arbitrary number of numbers
+    num=int(input("¬вед≥ть к≥льк≥сть чисел"))
+    lst=[int(input(": ")) for n in range(num)]  
+    return sum(lst)/len(lst)
+    
+
+print(arif_mean())
+######################################################################
+def abs_znach (a):
+    if a<0:
+        return(-a)
+    return (a)
+
+print(abs_znach(-3))
+#######################################################################
+def max(a,b):
+    if a>b:
+        print(a, 'max') 
+    elif b>a:
+        print(b, 'max') 
+    else:
+        print(a, "equal",b)
+        
+max(input(),input())
+########################################################################
+import math
+def circle_square ():    #count a circle square#
+    r=float(input())
+    square_cir=float(math.pi)*(r**2)
+    return square_cir
+
+
+def rectangle_sqare ():
+    #count a rectangle square#
+    a=float(input())
+    b=float(input())
+    sqare_rect=a*b
+    return sqare_rect
+
+def triangle_sqare():
+    #count a triangle square#
+    c=float(input())
+    d=float(input())
+    e=float(input())
+    p=(c+d+e)/2
+    square_trian=math.sqrt(p*(p-c)*(p-d)*(p-e))
+    return square_trian
+
+
+shape=str(input('The square of what shape would you like to count? '))
+if shape=='triangle':
+    print('Input sides of triangle')
+    print(triangle_sqare())
+elif shape=='circle':
+    print('Input the radii of the circle')
+    print(circle_square())
+elif shape=='rectangle':
+    print('Input sides of rectangle')
+    print(rectangle_sqare())
+else:
+        print('false shape')
+
+
