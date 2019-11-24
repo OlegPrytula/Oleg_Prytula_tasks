@@ -1,0 +1,6 @@
+def solution(number):
+    suma = 0
+    for n in range (number):
+        if n%3==0 or n%5==0:
+            suma = suma+n
+    return (suma)
